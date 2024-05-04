@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int main (){
     int age;
     cout << "Enter you're age:" << "\n";
