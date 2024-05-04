@@ -38,7 +38,6 @@ int main (){
     }
 
     cout << "Grade: " << grade ;
-
     return 0;
 }
 
