@@ -1,0 +1,4 @@
+Enter you're age:
+You are an Adult.
+Enter the marks:
+Grade: A
