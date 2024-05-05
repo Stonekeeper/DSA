@@ -37,7 +37,31 @@ int main (){
         cout << "Invalid marks entered..!";
     }
 
-    cout << "Grade: " << grade ;
+    cout << "Grade: " << grade  << endl;
+
+    int age_2;
+    cin >> age_2;
+
+    // if (age_2 < 18) {
+    //     cout << "Not eligible for a job.";
+    // } else if (age_2 > 57) {
+    //     cout << "Retirement time.";
+    // } else if (age_2 >= 55 && age_2 <= 57) {
+    //     cout << "Eligible for job, but retirement soon.";
+    // } else if (age_2 >= 18){
+    //     cout << "Eligible for a job";
+    // }
+
+    if (age_2 < 18){
+        cout << "Not eligible for job.";
+    } else if (age_2 <=54) {
+        cout << "Eligible for a job.";
+    } else if (age_2 <= 57) {
+        cout << "Eligible for a job, Retirement soon.";
+    } else {
+        cout << "Retirement time.";
+    }
+    
     return 0;
 }
 
