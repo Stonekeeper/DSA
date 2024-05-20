@@ -24,3 +24,7 @@ int main () {
 		  Also note that getline() considers \n as a input
 
 
+# Note 
+1. & is used in function to pass the value as reference
+2. Arrays are by default passed by reference and there is no need to specify &.
+

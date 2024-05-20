@@ -1,4 +1,8 @@
-Enter you're age:
-You are an Adult.
-Enter the marks:
-Grade: A
+Hello Praveen
+Hello Mr.Robot
+Sum of 1 and 2 is 3
+Sum of 10 and 7 is 17
+Inside the function after incrementing: 105
+After function execution (incrementByFive) the num is: 100
+Inside the function after incrementing: 110
+After function execution (incrementByTen) the num is: 110
