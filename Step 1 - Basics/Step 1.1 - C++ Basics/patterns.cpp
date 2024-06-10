@@ -354,8 +354,162 @@ void pattern17(int n){
     
 }
 
+/*
+E
+DE
+CDE
+BCDE
+ABCDE
+*/
+void pattern18(int n){
+    for (int i = 0; i < n; i++)
+    {
+        for (char j = 'A' + n - 1 - i ; j <= 'A' + n - 1; j++)
+        {
+            cout << j;
+        }
+        cout << endl;
+        
+    }
+    
+}
 
+/*
+**********
+****  ****
+***    ***
+**      **
+*        *
+*        *
+**      **
+***    ***
+****  ****
+**********
+*/
+void pattern19(int n){
+    for (int i = 0; i < n; i++)
+    {
+        int stars, spaces;
+        stars = n - i; spaces = 2 * i;
+        for(int j =  0; j < stars;j++){
+            cout << "*";
+        }
+        for(int j =  0; j < spaces ;j++){
+            cout << " ";
+        }
+        for(int j =  0; j < stars;j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        int stars, spaces;
+        stars = i; spaces = (2 * n - 2 ) - (2 * i);
+        for(int j =  0; j <= stars;j++){
+            cout << "*";
+        }
+        for(int j =  0; j < spaces ;j++){
+            cout << " ";
+        }
+        for(int j =  0; j <= stars;j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+/*
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+*/
+void pattern20(int n){
+    for(int i = 1 ; i < 2 * n ; i++){
+        int stars, spaces;
+        if (i > n ){
+            stars = (2 * n) - i;
+            spaces += 2;
+        } else {
+            stars = i;
+            spaces = (2 * n) - (2 * i);
+        }
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+        for (int j = 0; j < spaces; j++)
+        {
+            cout << " ";
+        }
+        for (int j = 1; j <= stars; j++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+}
+
+/*
+*****
+*   *
+*   *
+*   *
+*****
+*/
+void pattern21(int n){
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            if (i == 0 || i == n - 1 || j == 0 || j == n - 1){
+                cout << "*";
+            } else {
+                cout << " ";
+            }
+        }
+        cout << endl;
+        
+    }
+    
+}
+
+/*
+555555555
+544444445
+543333345
+543222345
+543212345
+543222345
+543333345
+544444445
+555555555
+*/
+void pattern22(int n){
+    for (int i = 0; i < 2 * n - 1; i++)
+    {
+        for (int j = 0; j < 2 * n - 1; j++)
+        {
+            int top = i;
+            int bottom = (2 * n - 2) - i ;
+            int left = j ;
+            int right = (2 * n - 2) - j;
+            
+            cout << (n - min(min(top,bottom), min(left,right)));
+
+        }
+        cout << endl;
+        
+    }
+    
+}
 int main(){
-    pattern17(5);
     return 0;
 }
