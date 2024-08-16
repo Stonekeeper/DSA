@@ -1,8 +1,14 @@
-Hello Praveen
-Hello Mr.Robot
-Sum of 1 and 2 is 3
-Sum of 10 and 7 is 17
-Inside the function after incrementing: 105
-After function execution (incrementByFive) the num is: 100
-Inside the function after incrementing: 110
-After function execution (incrementByTen) the num is: 110
+1 or 4
+1
+2
+5
+5
+1 2 3 4 5 
+1 2 3 4 5 
+1 2 3 4 5 
+2 3 4 5 
+2 3 
+1 2 3 4 5 5 5 
+7
+1 2 3 4 5 5 
+1
